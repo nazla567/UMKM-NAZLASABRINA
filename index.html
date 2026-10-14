@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website UMKM Kuliner Premium</title>
+    <!-- SUDAH DISESUAIKAN: Menghubungkan ke folder css huruf kecil -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts untuk tampilan estetik -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="container header-box">
+            <div class="logo-wrapper">
+                <!-- SUDAH DISESUAIKAN: Memanggil dari assets/images/ -->
+                <img src="assets/images/Logo.jpg" alt="Logo Toko" class="site-logo">
+                <h1 class="logo-text">Camilan<span>Merah</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#keunggulan">Kelebihan</a></li>
+                    <li><a href="#produk">Menu Produk</a></li>
+                    <li><a href="#kontak">Hubungi Kami</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero / Banner Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="tagline">Resep Tradisional Otentik</span>
+            <h2>Pedasnya Menggoda,<br>Kualitas Juara!</h2>
+            <p>Dibuat dari bahan pilihan berkualitas tinggi untuk menjamin cita rasa yang bikin nagih di setiap gigitan.</p>
+            <a href="#produk" class="btn-primary">Lihat Produk</a>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section id="keunggulan" class="keunggulan container">
+        <div class="section-header">
+            <h2 class="section-title">Mengapa Memilih Kami?</h2>
+            <p>Kami selalu menjaga standar terbaik untuk kepuasan Anda</p>
+        </div>
+        <div class="grid-keunggulan">
+            <div class="fitur-card">
+                <!-- SUDAH DISESUAIKAN: Memanggil dari assets/images/ -->
+                <img src="assets/images/terjamin.jpg" alt="Terjamin">
+                <h3>Mutu Terjamin</h3>
+            </div>
+            <div class="fitur-card">
+                <img src="assets/images/kualitas.jpg" alt="Kualitas">
+                <h3>Bahan Berkualitas</h3>
+            </div>
+            <div class="fitur-card">
+                <img src="assets/images/kemasan.jpg" alt="Kemasan">
+                <h3>Kemasan Aman</h3>
+            </div>
+            <div class="fitur-card">
+                <img src="assets/images/halal.jpg" alt="Halal">
+                <h3>100% Halal</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="produk-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Varian Rasa Unggulan</h2>
+                <p>Silakan pilih varian rasa favorit yang siap menggoyang lidah Anda</p>
+            </div>
+            
+            <div class="grid-produk">
+                <!-- Kartu Produk 1: Original -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <!-- SUDAH DISESUAIKAN: Memanggil dari assets/images/ -->
+                        <img src="assets/images/original.jpg" alt="Varian Original">
+                    </div>
+                    <div class="card-body">
+                        <h3>Varian Original</h3>
+                        <p class="deskripsi-produk">Rasa gurih klasik yang renyah, asinnya pas dan bikin ga bisa berhenti ngunyah.</p>
+                        <p class="harga">Rp 15.000</p>
+                        <button class="btn-beli" data-produk="Varian Original">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Kartu Produk 2: Balado -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <!-- SUDAH DISESUAIKAN: Memanggil dari assets/images/ -->
+                        <img src="assets/images/balado.jpg" alt="Varian Balado">
+                    </div>
+                    <div class="card-body">
+                        <h3>Varian Balado Pedas</h3>
+                        <p class="deskripsi-produk">Paduan bumbu balado manis pedas melimpah yang meresap sempurna.</p>
+                        <p class="harga">Rp 17.000</p>
+                        <button class="btn-beli" data-produk="Varian Balado Pedas">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="kontak">
+        <div class="container">
+            <h2>Tertarik Mencobanya?</h2>
+            <p>Klik tombol di bawah ini untuk memesan langsung melalui WhatsApp. Siap kirim ke seluruh Indonesia!</p>
+            <a href="https://wa.me" target="_blank" class="btn-wa">Order via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Camilan Merah UMKM. All Rights Reserved.</p>
+    </footer>
+
+    <!-- SUDAH DISESUAIKAN: Menghubungkan ke folder js huruf kecil -->
+    <script src="js/script.js"></script>
+</body>
+</html>

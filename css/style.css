@@ -1,0 +1,334 @@
+/* ==========================================
+   1. RESET & PENGATURAN DASAR
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fdfdfd;
+    color: #2d2d2d;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   2. HEADER & NAVIGASI (LOGO & MENU)
+   ========================================== */
+header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #a91d22;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.logo-text span {
+    color: #a91d22;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.25s ease;
+}
+
+nav ul li a:hover {
+    color: #a91d22;
+}
+
+/* ==========================================
+   3. HERO BANNER (UTAMA.JPG)
+   ========================================== */
+.hero {
+    /* SUDAH DISESUAIKAN: Jalur gambar menuju folder assets/images/ */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), 
+                url('../assets/images/utama.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #2a080a;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-left: 5%;
+}
+
+.tagline {
+    display: inline-block;
+    background-color: rgba(169, 29, 34, 0.2);
+    color: #ff8e93;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(169, 29, 34, 0.4);
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #a91d22;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #cd272d;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   4. KEUNGGULAN SECTION
+   ========================================== */
+.keunggulan {
+    padding: 70px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: #777;
+}
+
+.grid-keunggulan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.fitur-card {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #f5f5f5;
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+.fitur-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.fitur-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+
+/* ==========================================
+   5. MENU PRODUK SECTION
+   ========================================== */
+.produk-section {
+    background-color: #fff9f9;
+    padding: 70px 0;
+}
+
+.grid-produk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    transition: all 0.3s ease;
+    flex: 1 1 280px;
+    max-width: 350px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-wrapper {
+    height: 240px;
+    background-color: #f7f7f7;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-body h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.deskripsi-produk {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.harga {
+    color: #a91d22;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-beli {
+    width: 100%;
+    padding: 12px;
+    background-color: #fdf2f2;
+    color: #a91d22;
+    border: 1px solid rgba(169, 29, 34, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-beli:hover {
+    background-color: #a91d22;
+    color: white;
+}
+
+/* ==========================================
+   6. KONTAK & FOOTER
+   ========================================== */
+.kontak {
+    background: #a91d22;
+    color: white;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.kontak h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.kontak p {
+    margin-bottom: 30px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-wa {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: white;
+    color: #a91d22;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-wa:hover {
+    background-color: #f4f4f4;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #111;
+    color: #666;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+}
